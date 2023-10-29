@@ -6,17 +6,15 @@
  */
 
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground, Image } from 'react-native';
-import CardItem from './components/CardItem';
+import { StyleSheet, View } from 'react-native';
+import CarsList from './components/CarsList';
+import Header from './components/Header';
 
 function App(): JSX.Element {
   return (
     <View style={styles.container}>
-      <CardItem name="Model X"
-        tagline="Starting form $99,500"
-        taglineCTA="Touchless Delivery"
-        image={require('./assets/images/ModelX.jpeg')}
-      />
+      <Header />
+      <CarsList />
     </View>
   );
 }
